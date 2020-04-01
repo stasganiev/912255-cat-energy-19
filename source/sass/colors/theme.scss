@@ -1,0 +1,15 @@
+.examples__content {
+  background-color: $bg-color-grey;
+}
+
+.page-block__face {
+  background-color: $basic-fill;
+}
+
+.page-block__life {
+  background-color: $bg-color-grey;
+}
+
+.btn__base {
+  @include colors($txt-color-light, $basic-fill);
+}
