@@ -1,0 +1,22 @@
+.how-work {
+
+}
+
+.how-work__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.how-work__img-box {
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 20px;
+}
+
+.how-work__item-text {
+  @include nospace;
+  font-size: 14px;
+  line-height: 1.29;
+  font-family: "Arial";
+}

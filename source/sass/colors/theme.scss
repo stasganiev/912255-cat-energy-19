@@ -1,9 +1,21 @@
-.examples__content {
+body {
+  @include colors($txt-color, $bg-color);
+}
+
+.examples__item {
   background-color: $bg-color-grey;
 }
 
+.axamples__text {
+  color: $txt-color-dim;
+}
+
+.how-work__item-text {
+  color: $txt-color-dim;
+}
+
 .page-block__face {
-  background-color: $basic-fill;
+  // background-color: $basic-fill;
 }
 
 .page-block__life {
@@ -12,4 +24,16 @@
 
 .btn__base {
   @include colors($txt-color-light, $basic-fill);
+}
+
+.how-work__img-box {
+  background-color: $basic-fill;
+}
+
+.page-content__face {
+  color: $txt-color-light;
+}
+
+.footer {
+  background-color: $bg-color-grey;
 }

@@ -1,0 +1,19 @@
+.footer {
+
+}
+
+.footer-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-box:nth-child(1),
+.footer-box:nth-child(2) {
+  border-bottom: 1px solid $layout-border-color;
+}
+
+.footer__logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
