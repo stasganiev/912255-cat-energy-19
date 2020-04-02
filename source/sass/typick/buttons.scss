@@ -57,20 +57,6 @@
 
     width: 30px;
     height: 3px;
-
-    background-color: $color-btn-menu;
-    box-shadow: 0 8px 0 0 $color-btn-menu, 0 16px 0 0 $color-btn-menu;
-  }
-
-  &:hover::before,
-  &:focus::before {
-    background-color: $color-btn-menu-hover;
-    box-shadow: 0 8px 0 0 $color-btn-menu-hover, 0 16px 0 0 $color-btn-menu-hover;
-  }
-
-  &:active::before {
-    background-color: $color-btn-menu-active;
-    box-shadow: 0 8px 0 0 $color-btn-menu-active, 0 16px 0 0 $color-btn-menu-active;
   }
 }
 
@@ -85,8 +71,6 @@
 
     width: 25px;
     height: 4px;
-
-    background-color: $color-btn-menu;
   }
 
   &::before {
@@ -95,18 +79,6 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:focus::before,
-  &:hover::after,
-  &:focus::after {
-    background-color: $color-btn-menu-hover;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: $color-btn-menu-active;
   }
 }
 
@@ -155,4 +127,3 @@
     top: 30px;
   }
 }
-
