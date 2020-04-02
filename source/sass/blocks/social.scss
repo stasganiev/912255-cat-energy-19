@@ -1,0 +1,10 @@
+.social {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -12,7 +12,7 @@
     <!-- Нормализация стилей -->
     <!-- <link href="css/normalize.css" rel="stylesheet"> -->
     <!-- Собственные стили -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
     <!-- <link href="css/style_min.css" rel="stylesheet"> -->
     <!-- Подключение шрифтов -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">или другой шрифт -->
@@ -25,28 +25,24 @@
 
   <header class="header page-block page-block__header">
 
-    <h1 class="visuali-hidden">Подбор прогрмыы</h1>
+    <h1 class="visually-hidden">Подбор прогрмыы</h1>
 
     <div class="container page-content page-content__header">
 
-      <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed navbar__js_opend">
+      <nav class="header__nav main-nav navbar__js_opend">
+      <!-- <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed navbar__js_opend"> -->
 
         <div class="header__title main-title">
           <div class="main-title__logo logo">
-            <a class="logo__link" href="index.html"><img class="logo__img" src="img/temp.jpg" width="" height="" alt="Cat Energy"></a>
+            <a class="logo__link"><img class="logo__img" src="img/logo-mobile.svg" width="195" height="65" alt="Cat Energy"></a>
           </div>
-          <div class="main-title__title">
-            <p class="main-title__head">
-              <span class="main-title__head_strong">Cat</span> energy
-            </p>
-          </div>
-          <button class="btn btn__burger"></button>
+          <button class="btn btn__burger btn__main-menu"></button>
         </div>
 
-        <ul class="main-nav__menu main-menu hidden">
+        <ul class="main-nav__menu main-menu hidden list-default">
           <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu__item"><a class="main-menu__link">Подбор программы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
 
       </nav>
@@ -131,7 +127,7 @@
           </div>
         </div>
 
-        <button class="form__button btn btn__form-submit" type="submit">Отправить заявку</button>
+        <button class="form__button btn btn__form-submit btn__base" type="submit">Отправить заявку</button>
         <p class="form__caption">* - Обязательные поля</p>
 
       </form>
@@ -141,7 +137,7 @@
 
   <section class="map page-block page-block__map">
 
-    <h2 class="visualy-hidden">Приглашаем к сотрудничеству</h2>
+    <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
 
     <div class="container page-content page-content__map">
       <div class="map__title">Приглашаем к сотрудничеству дилеров!</div>
@@ -155,25 +151,23 @@
   <footer class="footer">
     <div class="container page-content page-content__footer">
       <div class="footer-box">
-        <p class="footer__title">
-          <span class="footer__title_strong">Cat</span>energy
-        </p>
+        <img class="footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="footer-box social">
-        <ul class="social__list">
+        <ul class="social__list list-default">
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-vk.svg" width="16" height="16" alt="">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-insta.svg" width="16" height="16" alt="">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-fb.svg" width="16" height="16" alt="">
             </a>
           </li>
         </ul>
@@ -181,7 +175,7 @@
       <div class="footer-box copyright">
         <p class="copyright__title">HTML Academy</p>
         <a href="" class="copyright__link">
-          <img class="copyright__icon" src="img/htmlacademy.svg" width="" height="" alt="">
+          <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
         </a>
       </div>
     </div>

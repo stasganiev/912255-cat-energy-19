@@ -1,0 +1,29 @@
+.card {
+  padding-bottom: 20px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.card__article {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__consist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.card__title {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}

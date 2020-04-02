@@ -12,7 +12,7 @@
     <!-- Нормализация стилей -->
     <!-- <link href="css/normalize.css" rel="stylesheet"> -->
     <!-- Собственные стили -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
     <!-- <link href="css/style_min.css" rel="stylesheet"> -->
     <!-- Подключение шрифтов -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">или другой шрифт -->
@@ -25,28 +25,24 @@
 
   <header class="header page-block page-block__header">
 
-    <h1 class="visuali-hidden">Каталог продукции</h1>
+    <h1 class="visually-hidden">Каталог продукции</h1>
 
     <div class="container page-content page-content__header">
 
-      <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed navbar__js_opend">
+      <nav class="header__nav main-nav navbar__js_opend">
+      <!-- <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed navbar__js_opend"> -->
 
         <div class="header__title main-title">
           <div class="main-title__logo logo">
-            <a class="logo__link" href="index.html"><img class="logo__img" src="img/temp.jpg" width="" height="" alt="Cat Energy"></a>
+            <a class="logo__link"><img class="logo__img" src="img/logo-mobile.svg" width="195" height="65" alt="Cat Energy"></a>
           </div>
-          <div class="main-title__title">
-            <p class="main-title__head">
-              <span class="main-title__head_strong">Cat</span> energy
-            </p>
-          </div>
-          <button class="btn btn__burger"></button>
+          <button class="btn btn__burger btn__main-menu"></button>
         </div>
 
-        <ul class="main-nav__menu main-menu hidden">
+        <ul class="main-nav__menu main-menu hidden list-default">
           <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-          <li class="main-menu__item"><a class="main-menu__link">Каталог продукции</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Подбор программы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
 
       </nav>
@@ -58,23 +54,23 @@
 
     <h2 class="block-title catalog__title">Каталог продукции</h2>
 
-    <div class="container page-content page-content__catalog">
+    <div class="page-content page-content__catalog">
 
-      <ul class="catalog__list goog-list">
+      <ul class="catalog__list goog-list list-default">
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy pro 500 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">500 г</li>
                     <li class="card__consist-value">Курица</li>
                     <li class="card__consist-value">700 Р.</li>
@@ -83,23 +79,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy pro 1000 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">1000 г</li>
                     <li class="card__consist-value">Курица</li>
                     <li class="card__consist-value">1000 Р.</li>
@@ -108,23 +104,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy pro 500 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">500 г</li>
                     <li class="card__consist-value">Рыба</li>
                     <li class="card__consist-value">700 Р.</li>
@@ -133,23 +129,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy pro 1000 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">1000 г</li>
                     <li class="card__consist-value">Рыба</li>
                     <li class="card__consist-value">1000 Р.</li>
@@ -158,23 +154,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy slim 500 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">500 г</li>
                     <li class="card__consist-value">Гречка</li>
                     <li class="card__consist-value">400 Р.</li>
@@ -183,23 +179,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy slim 1000 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">1000 г</li>
                     <li class="card__consist-value">Гречка</li>
                     <li class="card__consist-value">700 Р.</li>
@@ -208,23 +204,23 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content card">
             <div class="card__content">
-              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="" height="">
+              <img class="card__img" src="img/temp.jpg" alt="Изображение товара" width="140" height="140">
               <div class="card__article">
                 <h3 class="card__title">Cat energy slim 500 г</h3>
                 <div class="card__consist">
-                  <ul class="card__consist-names">
+                  <ul class="card__consist-names list-default">
                     <li class="card__consist-name">Объем</li>
                     <li class="card__consist-name">Вкус</li>
                     <li class="card__consist-name">Цена</li>
                   </ul>
-                  <ul class="card__consist-values">
+                  <ul class="card__consist-values list-default">
                     <li class="card__consist-value">500 г</li>
                     <li class="card__consist-value">Рис</li>
                     <li class="card__consist-value">500 Р.</li>
@@ -233,13 +229,13 @@
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
 
         </li>
         <li class="goog-list__item">
 
           <div class="goog-list__item-content add-goods">
-            <img class="add-goods__plus" src="img/temp.jpg" width="" height="" alt="Добавить">
+            <img class="add-goods__plus" src="img/temp.jpg" width="30" height="30" alt="Добавить">
             <p class="add-goods__title">Показать еще 100500 товаров</p>
             <p class="add-goods__text">На самом деле вкусов гораздо больше!</p>
           </div>
@@ -257,74 +253,74 @@
     <h2 class="block-title catalog-ext__title">Дополнительные товары</h2>
 
     <div class="container page-content page-content__catalog-ext">
-      <ul class="catalog-ext__list goog-list_light">
+      <ul class="catalog-ext__list goog-list_light list-default">
         <li class="goog-list__item_light">
           <div class="goog-list__item-content_light card">
             <div class="card__content">
               <h4 class="card__title">Сахарозаменитель</h4>
               <div class="card__consist">
-                <ul class="card__consist-names">
+                <ul class="card__consist-names list-default">
                   <li class="card__consist-name">1 упаковка (100 г)</li>
                 </ul>
-                <ul class="card__consist-values">
+                <ul class="card__consist-values list-default">
                   <li class="card__consist-value">200 р.</li>
                 </ul>
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
         </li>
         <li class="goog-list__item_light">
           <div class="goog-list__item-content_light card">
             <div class="card__content">
               <h4 class="card__title">Питьевая вода</h4>
               <div class="card__consist">
-                <ul class="card__consist-names">
+                <ul class="card__consist-names list-default">
                   <li class="card__consist-name">5 литров</li>
                 </ul>
-                <ul class="card__consist-values">
+                <ul class="card__consist-values list-default">
                   <li class="card__consist-value">50 р.</li>
                 </ul>
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
         </li>
         <li class="goog-list__item_light">
           <div class="goog-list__item-content_light card">
             <div class="card__content">
               <h4 class="card__title">Молоко</h4>
               <div class="card__consist">
-                <ul class="card__consist-names">
+                <ul class="card__consist-names list-default">
                   <li class="card__consist-name">1 литр</li>
                 </ul>
-                <ul class="card__consist-values">
+                <ul class="card__consist-values list-default">
                   <li class="card__consist-value">100 р.</li>
                 </ul>
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
         </li>
         <li class="goog-list__item_light">
           <div class="goog-list__item-content_light card">
             <div class="card__content">
               <h4 class="card__title">Витамины</h4>
               <div class="card__consist">
-                <ul class="card__consist-names">
+                <ul class="card__consist-names list-default">
                   <li class="card__consist-name">1 упаковка (30 г)</li>
                 </ul>
-                <ul class="card__consist-values">
+                <ul class="card__consist-values list-default">
                   <li class="card__consist-value">300 р.</li>
                 </ul>
               </div>
             </div>
           </div>
-          <button class="btn btn__order">Заказать</button>
+          <button class="btn btn__order btn__base">Заказать</button>
         </li>
       </ul>
       <div class="catalog-ext__footer">
-        <img class="catalog-ext__picture-bag" src="img/temp.jpg" width="" height="" alt="">
+        <img class="catalog-ext__picture-bag" src="img/temp.jpg" width="55" height="60" alt="">
         <p class="catalog-ext__footer-text">
           Закажите все и получите чехол для кота в подарок!
         </p>
@@ -335,7 +331,7 @@
 
   <section class="map page-block page-block__map">
 
-    <h2 class="visualy-hidden">Приглашаем к сотрудничеству</h2>
+    <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
 
     <div class="container page-content page-content__map">
       <div class="map__title">Приглашаем к сотрудничеству дилеров!</div>
@@ -349,25 +345,23 @@
   <footer class="footer">
     <div class="container page-content page-content__footer">
       <div class="footer-box">
-        <p class="footer__title">
-          <span class="footer__title_strong">Cat</span>energy
-        </p>
+        <img class="footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="footer-box social">
-        <ul class="social__list">
+        <ul class="social__list list-default">
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-vk.svg" width="16" height="16" alt="">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-insta.svg" width="16" height="16" alt="">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <img class="social__icon" src="img/temp.jpg" width="" height="" alt="">
+              <img class="social__icon" src="img/icon-fb.svg" width="16" height="16" alt="">
             </a>
           </li>
         </ul>
@@ -375,7 +369,7 @@
       <div class="footer-box copyright">
         <p class="copyright__title">HTML Academy</p>
         <a href="" class="copyright__link">
-          <img class="copyright__icon" src="img/htmlacademy.svg" width="" height="" alt="">
+          <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="">
         </a>
       </div>
     </div>

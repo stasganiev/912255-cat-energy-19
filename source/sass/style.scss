@@ -1,0 +1,23 @@
+// Общие
+@import "colors/colors.scss";
+@import "base/vars.scss";
+@import "base/mixins.scss";
+@import "base/base.scss";
+@import "layouts/layouts.scss";
+@import "typick/buttons.scss";
+// Блоки
+@import "blocks/page-block.scss";
+@import "blocks/examples.scss";
+@import "blocks/face.scss";
+@import "blocks/programms.scss";
+@import "blocks/block-title.scss";
+@import "blocks/how-work.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";
+@import "blocks/catalog.scss";
+@import "blocks/goog-list.scss";
+@import "blocks/card.scss";
+// Типографика и темы
+@import "colors/theme.scss";
+// @import "layouts/outlines.scss";
