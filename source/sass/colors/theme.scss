@@ -1,5 +1,17 @@
+// глобальные
+
 body {
   @include colors($txt-color, $bg-color);
+}
+
+// Фоны и типографика
+
+// .page-block__face {
+//   background-color: $basic-fill;
+// }
+
+.catalog__footer {
+  background-color: $basic-fill;
 }
 
 .examples__item {
@@ -14,16 +26,24 @@ body {
   color: $txt-color-dim;
 }
 
-.page-block__face {
-  // background-color: $basic-fill;
+.life__text {
+  color: $txt-color-dim;
+}
+
+.map__text {
+  color: $txt-color-dim;
+}
+
+.map_dim {
+  background-color: $bg-color-grey;
+}
+
+.add-goods__text {
+  color: $txt-color-dim;
 }
 
 .page-block__life {
   background-color: $bg-color-grey;
-}
-
-.btn__base {
-  @include colors($txt-color-light, $basic-fill);
 }
 
 .how-work__img-box {
@@ -46,6 +66,14 @@ body {
   color: $txt-color-dim;
 }
 
+.card-mini__consist {
+  color: $txt-color-dim;
+}
+
+.catalog__footer-text {
+  color: $txt-color-light;
+}
+
 // Декор
 
 .examples__footer {
@@ -64,9 +92,40 @@ body {
 
 .goog-list__item {
   border-bottom: 1px solid $catalog-border-color;
+
+  &_light {
+    border-bottom: 1px solid $catalog-mini-border-color;
+
+    &:nth-child(1) {
+      border-top: 1px solid $catalog-mini-border-color;
+    }
+  }
+}
+
+.block-title__decor {
+  background-color: $basic-fill;
+}
+
+.form__basic-wrap,
+.form__toggle-wrap {
+  border-bottom: 1px solid $form-border-color;
+}
+
+.form__basic-input,
+.form__contact-input,
+.form__comment-input {
+  border: 1px solid $input-border-color;
 }
 
 // Кнопки
+
+.btn__base {
+  @include colors($txt-color-light, $basic-fill);
+}
+
+.btn__other {
+  @include colors($txt-color-dim, $bg-color-grey);
+}
 
 .navbar__js_closed .btn__main-menu {
   &::before {

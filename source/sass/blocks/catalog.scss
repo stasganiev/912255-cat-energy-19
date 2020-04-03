@@ -2,3 +2,18 @@
   margin: 0;
   padding: 23px $xs-padding;
 }
+
+.catalog__footer {
+  min-height: 260px;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.catalog__footer-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}

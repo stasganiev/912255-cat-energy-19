@@ -1,0 +1,22 @@
+.card-mini {
+  padding: 15px 0;
+}
+
+.card-mini__title {
+  @include nospace;
+
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.card-mini__consist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
