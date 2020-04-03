@@ -1,0 +1,26 @@
+.map__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.map__title {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.map__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.map__picture {
+  min-height: 360px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

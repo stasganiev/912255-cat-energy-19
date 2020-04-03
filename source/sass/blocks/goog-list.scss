@@ -1,3 +1,8 @@
 .goog-list__item {
   padding: 20px;
+
+  &_light {
+    // padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
