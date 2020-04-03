@@ -34,6 +34,10 @@ body {
   color: $txt-color-dim;
 }
 
+.map_dim {
+  background-color: $bg-color-grey;
+}
+
 .add-goods__text {
   color: $txt-color-dim;
 }
@@ -100,6 +104,17 @@ body {
 
 .block-title__decor {
   background-color: $basic-fill;
+}
+
+.form__basic-wrap,
+.form__toggle-wrap {
+  border-bottom: 1px solid $form-border-color;
+}
+
+.form__basic-input,
+.form__contact-input,
+.form__comment-input {
+  border: 1px solid $input-border-color;
 }
 
 // Кнопки

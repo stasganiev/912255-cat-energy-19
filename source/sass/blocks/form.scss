@@ -3,3 +3,80 @@
   line-height: 1.29;
   text-transform: uppercase;
 }
+
+.form__basic-label,
+.form__basic-input,
+.form__basic-input::placeholder,
+.form__toggle-label,
+.form__contact-label,
+.form__contact-input,
+.form__contact-input::placeholder,
+.form__comment-input::placeholder,
+.form__check-label {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+}
+
+.form__caption {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.form__basic-content {
+  margin-bottom: 25px;
+}
+
+.form__toggle-content,
+.form__check-content {
+  padding: 20px 0;
+}
+
+.form__basic-item,
+.form__toggle-item,
+.form__contact-item,
+.form__check {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.form__contact-item {
+  position: relative;
+}
+
+.form__toggle-item:last-child,
+.form__check:last-child {
+  margin-bottom: 0;
+}
+
+.form__basic-label,
+.form__contact-label {
+  margin: auto;
+  margin-right: 15px;
+}
+
+.form__basic-input,
+.form__contact-input {
+  flex-grow: 1;
+  padding: 13px;
+  min-height: 45px;
+}
+
+.form__contact-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form__toggle-btn,
+.form__check-btn {
+  margin-right: 15px;
+}
+
+.form__comment-input {
+  width: 100%;
+}
