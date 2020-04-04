@@ -27,20 +27,20 @@
 
     <h1 class="visually-hidden">Функциональное питание для котов Cat Energy</h1>
 
-    <div class="container page-content page-content__header">
+    <div class="page-content page-content__header">
 
-      <nav class="header__nav main-nav navbar__js_opend">
+      <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed">
       <!-- <nav class="header__nav main-nav navbar__js_nojs navbar__js_closed navbar__js_opend"> -->
 
         <div class="header__title main-title">
           <div class="main-title__logo logo">
             <a class="logo__link"><img class="logo__img" src="img/logo-mobile.svg" width="195" height="65" alt="Cat Energy"></a>
           </div>
-          <button class="btn btn__burger btn__main-menu"></button>
+          <button class="btn btn__burger-js btn__main-menu"></button>
         </div>
 
-        <ul class="main-nav__menu main-menu hidden list-default">
-          <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
+        <ul class="main-nav__menu main-menu list-default">
+          <li class="main-menu__item main-menu__item_current"><a class="main-menu__link">Главная</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
@@ -54,13 +54,17 @@
 
     <h2 class="visually-hidden">Функциональное питание для котов</h2>
 
-    <div class="container page-content page-content__face">
-
-      <h3 class="face__title">Функциональное питание для котов</h3>
-      <p class="face__sub-title">Занялся собой? Займись котом!</p>
-      <img class="face__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="">
-
+    <div class="face__content">
+      <div class="face__area-dark"></div>
+      <div class="face__area-light"></div>
+      <div class="face__area-content container-fluid">
+        <h3 class="face__title"><span>Функциональное</span><span>питание для котов</span></h3>
+        <p class="face__sub-title">Занялся собой? Займись котом!</p>
+        <img class="face__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="">
+        <a class="face__btn btn programms__btn btn__base" href="form.html">Подобрать программу</a>
+      </div>
     </div>
+
   </div>
 
   <section class="programms page-block page-block__header">
@@ -68,7 +72,6 @@
     <h2 class="visually-hidden">Программы питания</h2>
 
     <div class="container page-content page-content__programms">
-      <a href="form.html" class="btn programms__btn btn__base">Подобрать программу</a>
       <ul class="programms__examples examples list-default">
         <li class="examples__item">
 
@@ -226,6 +229,8 @@
     </div>
   </footer>
 
+  <!-- Подключение скриптов -->
+  <script src="js/nav.js"></script>
 
   <!-- Наполнение страницы -->
 
@@ -240,10 +245,6 @@
   </picture> -->
 
   <!-- Формы/попапы  -->
-
-  <!-- Подключение скриптов -->
-  <!-- <script src="js/script.js"></script> -->
-  <!-- <script src="js/min_script.js"></script> -->
 
 </body>
 </html>

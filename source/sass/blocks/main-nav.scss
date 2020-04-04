@@ -1,0 +1,7 @@
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

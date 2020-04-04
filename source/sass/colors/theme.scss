@@ -6,72 +6,56 @@ body {
 
 // Фоны и типографика
 
-// .page-block__face {
-//   background-color: $basic-fill;
-// }
-
-.catalog__footer {
-  background-color: $basic-fill;
-}
-
-.examples__item {
-  background-color: $bg-color-grey;
-}
-
-.axamples__text {
-  color: $txt-color-dim;
-}
-
-.how-work__item-text {
-  color: $txt-color-dim;
-}
-
-.life__text {
-  color: $txt-color-dim;
-}
-
-.map__text {
-  color: $txt-color-dim;
-}
-
-.map_dim {
-  background-color: $bg-color-grey;
-}
-
-.add-goods__text {
-  color: $txt-color-dim;
-}
-
-.page-block__life {
-  background-color: $bg-color-grey;
-}
-
+.catalog__footer,
 .how-work__img-box {
   background-color: $basic-fill;
 }
 
-.page-content__face {
-  color: $txt-color-light;
-}
-
+.examples__item,
+.map_dim,
+.page-block__life,
 .footer {
   background-color: $bg-color-grey;
 }
 
-.copyright__title {
-  color: $txt-color-dim;
-}
-
-.card__consist {
-  color: $txt-color-dim;
-}
-
-.card-mini__consist {
+.axamples__text,
+.card-mini__consist,
+.card__consist,
+.copyright__title,
+.add-goods__text,
+.map__text,
+.life__text,
+.how-work__item-text {
   color: $txt-color-dim;
 }
 
 .catalog__footer-text {
   color: $txt-color-light;
+}
+
+@media (max-width: $xs-max) {
+  .face__area-dark {
+    background-color: $basic-fill;
+  }
+
+  .face__area-light {
+    background-color: $bg-color;
+  }
+
+  .face__area-content {
+    color: $txt-color-light;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .face__area-dark,
+  .face__area-light {
+    background-color: $bg-color;
+  }
+
+  .face__area-content {
+    color: $txt-color;
+  }
 }
 
 // Декор
@@ -117,6 +101,26 @@ body {
   border: 1px solid $input-border-color;
 }
 
+@media (max-width: $xs-max) {
+  .main-menu__item {
+    border-top: 1px solid $menu-border-color;
+  }
+
+  .main-menu__item:last-child {
+    border-bottom: 1px solid $menu-border-color;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .main-menu {
+    color: $btn-burger-color;
+  }
+
+  .main-menu__item_current {
+    border-bottom: 2px solid $basic-fill;
+  }
+}
+
 // Кнопки
 
 .btn__base {
@@ -127,39 +131,41 @@ body {
   @include colors($txt-color-dim, $bg-color-grey);
 }
 
-.navbar__js_closed .btn__main-menu {
-  &::before {
-    background-color: $btn-burger-color;
-    box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
+@media (max-width: $xs-max) {
+  .navbar__js_closed .btn__main-menu {
+    &::before {
+      background-color: $btn-burger-color;
+      box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $btn-burger-color;
+      box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
+    }
+
+    &:active::before {
+      background-color: $btn-burger-color;
+      box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
+    }
   }
 
-  &:hover::before,
-  &:focus::before {
-    background-color: $btn-burger-color;
-    box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
-  }
+  .navbar__js_opend .btn__main-menu {
+    &::before,
+    &::after {
+      background-color: $btn-burger-color;
+    }
 
-  &:active::before {
-    background-color: $btn-burger-color;
-    box-shadow: 0 8px 0 0 $btn-burger-color, 0 16px 0 0 $btn-burger-color;
-  }
-}
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      background-color: $btn-burger-color;
+    }
 
-.navbar__js_opened .btn__main-menu {
-  &::before,
-  &::after {
-    background-color: $btn-burger-color;
-  }
-
-  &:hover::before,
-  &:focus::before,
-  &:hover::after,
-  &:focus::after {
-    background-color: $btn-burger-color;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: $btn-burger-color;
+    &:active::before,
+    &:active::after {
+      background-color: $btn-burger-color;
+    }
   }
 }

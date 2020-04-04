@@ -2,7 +2,6 @@
   appearance: none;
   display: inline-block;
   margin: 0;
-  padding: 10px 16px;
   min-width: 100px;
 
   font-family: inherit;
@@ -29,109 +28,103 @@
   }
 }
 
-.btn__base {
-  font-size: 14px;
+.btn__base,
+.btn__other {
+  max-width: 420px;
+  font-size: 16px;
   line-height: 1.29;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
+  font-weight: normal;
 }
 
-.btn__other {
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
+@media (max-width: $xs-max) {
+  .btn__base,
+  .btn__other {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.29;
+    }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .btn__base,
+  .btn__other {
+    padding: 16px 25px;
+    font-size: 20px;
+    line-height: 1;
+    }
 }
 
 // ////////////////////////////
 // Главное меню (кнопка "Бургер")
 // ////////////////////////////
-.btn__main-menu {
-  position: absolute;
-  right: 10px;
-
-  cursor: pointer;
-}
-
-.navbar__js_closed .btn__main-menu {
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 30px;
-    height: 3px;
-  }
-}
-
-.navbar__js_opened .btn__main-menu {
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    right: 0;
-
-    width: 25px;
-    height: 4px;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.navbar__js_nojs .btn__main-menu {
-  display: none;
-}
-
-@media (max-width: $s-max) {
+@media (max-width: $xs-max) {
   .btn__main-menu {
+    position: absolute;
     top: 15px;
+    right: 10px;
+
+    cursor: pointer;
   }
 
   .navbar__js_closed .btn__main-menu {
     width: 30px;
     height: 27px;
     top: 10px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 30px;
+      height: 3px;
+    }
   }
 
-  .navbar__js_opened .btn__main-menu {
+  .navbar__js_opend .btn__main-menu {
     width: 25px;
     height: 22px;
     top: 12px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 8px;
+      right: 0;
+
+      width: 25px;
+      height: 4px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .navbar__js_nojs .btn__main-menu {
+    display: none;
   }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
   .btn__main-menu {
-    top: 15px;
-  }
-
-  .navbar__js_closed .btn__main-menu {
-    width: 30px;
-    height: 27px;
-    top: 10px;
-  }
-
-  .navbar__js_opened .btn__main-menu {
-    width: 25px;
-    height: 22px;
-    top: 12px;
+    display: none;
   }
 }
 
-@media (min-width: $l-min) {
+@media (min-width: $xl-min) {
   .btn__main-menu {
-    top: 30px;
+    display: none;
   }
 }

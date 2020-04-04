@@ -6,7 +6,8 @@
 @import "layouts/layouts.scss";
 @import "typick/buttons.scss";
 // Блоки
-@import "blocks/page-block.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/examples.scss";
 @import "blocks/face.scss";
 @import "blocks/programms.scss";
@@ -24,6 +25,8 @@
 @import "blocks/map.scss";
 @import "blocks/add-goods.scss";
 @import "blocks/form.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/logo.scss";
 // Типографика и темы
 @import "colors/theme.scss";
 // @import "layouts/outlines.scss";

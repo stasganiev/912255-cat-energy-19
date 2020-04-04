@@ -1,11 +1,105 @@
-.face__title {
-  font-size: 36px;
-  line-height: 1;
-  text-align: center;
+.face__content {
+  position: relative;
+  width: 100%;
 }
 
-.face__sub-title {
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
+.face__title span {
+  @include nospace;
+}
+
+@media (max-width: $xs-max) {
+  .face__content {
+    min-height: 480px;
+  }
+
+  .face__area-dark {
+    min-height: 305px;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .face__area-light {
+    min-height: calc(480px - 305px);
+  }
+
+  .face__area-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+
+  .face__title {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .face__sub-title {
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .face__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .face__content {
+    min-height: 810px;
+  }
+
+  .face__area-dark {
+    min-height: calc(810px - 609px);
+  }
+
+  .face__area-light {
+    min-height: 609px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .face__area-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    left: 90px;
+  }
+
+  .face__title {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 60px;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .face__sub-title {
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .face__img {
+    display: none;
+  }
 }
