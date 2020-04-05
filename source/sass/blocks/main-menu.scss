@@ -34,6 +34,20 @@
   }
 
   .main-menu__item {
-    margin-left: 37px;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 20px;
+    line-height: 1.24;
+  }
+
+  .main-menu__item {
+    margin-left: 35px;
   }
 }

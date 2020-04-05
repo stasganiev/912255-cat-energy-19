@@ -58,11 +58,17 @@ body {
   }
 }
 
-// Декор
+@media (min-width: $xl-min) {
+  .face__area-dark {
+    background-color: $basic-fill;
+  }
 
-.examples__footer {
-  border-top: 1px solid $layout-border-color;
+  .face__area-light {
+    background-color: $bg-color;
+  }
 }
+
+// Декор
 
 .footer-box:nth-child(1),
 .footer-box:nth-child(2) {
@@ -109,6 +115,10 @@ body {
   .main-menu__item:last-child {
     border-bottom: 1px solid $menu-border-color;
   }
+
+  .examples__footer {
+    border-top: 1px solid $layout-border-color;
+  }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
@@ -118,6 +128,16 @@ body {
 
   .main-menu__item_current {
     border-bottom: 2px solid $basic-fill;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .main-menu {
+    color: $txt-color-light;
+  }
+
+  .main-menu__item_current {
+    border-bottom: 2px solid $txt-color-light;
   }
 }
 
