@@ -56,6 +56,10 @@ body {
   .face__area-content {
     color: $txt-color;
   }
+
+  .goog-list__item {
+    background-color: $bg-color-grey;
+  }
 }
 
 @media (min-width: $xl-min) {
@@ -66,6 +70,10 @@ body {
   .face__area-light {
     background-color: $bg-color;
   }
+
+  .goog-list__item {
+    background-color: $bg-color-grey;
+  }
 }
 
 // Декор
@@ -73,23 +81,6 @@ body {
 .footer-box:nth-child(1),
 .footer-box:nth-child(2) {
   border-bottom: 1px solid $layout-border-color;
-}
-
-.catalog__title {
-  border-top: 1px solid $catalog-border-color;
-  border-bottom: 1px solid $catalog-border-color;
-}
-
-.goog-list__item {
-  border-bottom: 1px solid $catalog-border-color;
-
-  &_light {
-    border-bottom: 1px solid $catalog-mini-border-color;
-
-    &:nth-child(1) {
-      border-top: 1px solid $catalog-mini-border-color;
-    }
-  }
 }
 
 .block-title__decor {
@@ -118,6 +109,23 @@ body {
 
   .examples__footer {
     border-top: 1px solid $layout-border-color;
+  }
+
+  .catalog__title {
+    border-top: 1px solid $catalog-border-color;
+    border-bottom: 1px solid $catalog-border-color;
+  }
+
+  .goog-list__item {
+    border-bottom: 1px solid $catalog-border-color;
+
+    &_light {
+      border-bottom: 1px solid $catalog-mini-border-color;
+
+      &:nth-child(1) {
+        border-top: 1px solid $catalog-mini-border-color;
+      }
+    }
   }
 }
 

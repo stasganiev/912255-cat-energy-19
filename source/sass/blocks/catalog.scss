@@ -1,8 +1,3 @@
-.catalog__title {
-  margin: 0;
-  padding: 23px $xs-padding;
-}
-
 .catalog__footer {
   min-height: 260px;
 
@@ -16,4 +11,27 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.25;
+}
+
+@media (max-width: $xs-max) {
+  .catalog__title {
+    margin: 0;
+    padding: 23px $xs-padding;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .catalog,
+  .catalog__title {
+    margin: 0;
+    padding: 23px $m-padding;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .catalog,
+  .catalog__title {
+    margin: 0;
+    padding: 23px $xl-padding;
+  }
 }
