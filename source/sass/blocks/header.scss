@@ -1,0 +1,34 @@
+@media (max-width: $xs-max) {
+  .header__nav {
+    position: relative;
+  }
+
+  .header__title {
+    // width: 100%;
+    padding: 0 $xs-padding;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .header__nav {
+    padding: 0 $m-padding;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .header__nav {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    padding: 0 $xl-padding;
+  }
+}

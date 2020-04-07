@@ -1,10 +1,22 @@
 .social {
-  padding-left: 75px;
-  padding-right: 75px;
+  @include fl_col_center;
 }
 
 .social__list {
+  flex-grow: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.social__item:nth-child(1) .social__icon {
+  @include size(22px, 12px);
+}
+
+.social__item:nth-child(2) .social__icon {
+  @include size(16px, 16px);
+}
+
+.social__item:nth-child(3) .social__icon {
+  @include size(10px, 19px);
 }

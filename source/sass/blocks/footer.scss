@@ -1,4 +1,5 @@
 .footer-box {
+  min-width: 160px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -7,4 +8,22 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+// @media (max-width: $xs-max) {
+//   .footer {
+
+//   }
+// }
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .footer {
+    @include fl_sb;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .footer {
+    @include fl_sb;
+  }
 }
