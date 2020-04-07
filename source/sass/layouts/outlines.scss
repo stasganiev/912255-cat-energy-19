@@ -28,6 +28,10 @@ a,
 p,
 span {
   position: relative;
+  // ////////////////////////////
+  // Для отключения рамок
+  // ////////////////////////////
+  border: none;
 }
 
 main::before,
@@ -277,36 +281,4 @@ p::before {
 
 span::before {
   content: "span";
-}
-
-// ////////////////////////////
-// Для отключения рамок
-// ////////////////////////////
-
-main,
-header,
-footer,
-section,
-article,
-nav,
-menu,
-aside,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-table,
-tr,
-td,
-div,
-img,
-a,
-p,
-span {
-  border: none;
 }

@@ -78,11 +78,6 @@ body {
 
 // Декор
 
-.footer-box:nth-child(1),
-.footer-box:nth-child(2) {
-  border-bottom: 1px solid $layout-border-color;
-}
-
 .block-title__decor {
   background-color: $basic-fill;
 }
@@ -126,6 +121,11 @@ body {
         border-top: 1px solid $catalog-mini-border-color;
       }
     }
+  }
+
+  .footer-box:nth-child(1),
+  .footer-box:nth-child(2) {
+    border-bottom: 1px solid $layout-border-color;
   }
 }
 
@@ -196,4 +196,10 @@ body {
       background-color: $btn-burger-color;
     }
   }
+}
+
+// Ссылки и графика
+
+.copyright__link svg path {
+  fill: $txt-color-dim;
 }
