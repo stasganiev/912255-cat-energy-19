@@ -24,3 +24,16 @@
   background-position: center center;
   background-size: cover;
 }
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .map__title {
+    padding-left: 40px;
+    max-width: 170px;
+  }
+
+  .map__text {
+    padding-right: 40px;
+    max-width: 170px;
+    text-align: right;
+  }
+}

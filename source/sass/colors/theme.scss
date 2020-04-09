@@ -13,7 +13,6 @@ body {
 
 .examples__item,
 .map_dim,
-.page-block__life,
 .footer {
   background-color: $bg-color-grey;
 }
@@ -45,6 +44,11 @@ body {
   .face__area-content {
     color: $txt-color-light;
   }
+
+  .life,
+  .ticket__legend {
+    background-color: $bg-color-grey;
+  }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
@@ -59,6 +63,26 @@ body {
 
   .goog-list__item {
     background-color: $bg-color-grey;
+  }
+
+  .life {
+    border-top-color: $catalog-border-color;
+  }
+
+  .life__bg {
+    background-color: $bg-color;
+
+    &_left {
+      background-color: $bg-color-grey;
+    }
+
+    &_right {
+      background-color: $bg-color-grey2;
+    }
+  }
+
+  .ticket__legend {
+    background-color: $bg-color;
   }
 }
 

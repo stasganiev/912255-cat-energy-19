@@ -1,6 +1,6 @@
 .how-work__title {
-  margin-bottom: 35px;
-  margin-top: 35px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .how-work__item-text {
@@ -9,21 +9,49 @@
 }
 
 @media (max-width: $xs-max) {
-  .how-work__item-text {
-    font-size: 14px;
-    line-height: 1.29;
+  .how-work {
+    @include fl;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-work__title {
+    flex-basis: 280px;
+    flex-grow: 1;
+    align-self: stretch;
+    max-width: 420px;
+  }
+
+  .how-work__list {
+    @include fl;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: -25px;
   }
 
   .how-work__item {
     display: flex;
     flex-direction: row;
+
+    flex-basis: 280px;
+    flex-grow: 1;
+    align-self: stretch;
+    max-width: 420px;
+
     margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  .how-work__item-text {
+    font-size: 14px;
+    line-height: 1.29;
   }
 
   .how-work__img-box {
     display: block;
-    width: 60px;
-    height: 60px;
+    @include size(60px, 60px);
+    min-width: 60px;
     margin-right: 20px;
   }
 }
